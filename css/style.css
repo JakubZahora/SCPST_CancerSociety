@@ -1,0 +1,63 @@
+/** This is the CSS page for our website. */
+
+@media screen and (max-width: 980px) {
+.body #headerWrapper #navAddressWrapper #navAddress
+address {
+    padding-left: 0;
+    padding-right: 14px;
+    }
+}
+
+.a {
+    color: #008998;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.body #headerWrapper {
+    background: #FFF;
+    padding: 0 0 2px;
+}
+
+.body #headerWrapper #navAddressWrapper #navAddress address {
+    background: #001A4B;
+    float: right;
+}
+
+.body #headerWrapper #navAddressWrapper {
+    background: #00338E;
+    border: 0;
+    border-bottom: 1 px solid;
+    border-top: 1 px solid;
+}
+
+.body #headerWrapper #navAddressWrapper #navAddress {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.body #headerWrapper #navAddressWrapper #navAddress
+address a {
+    display: block;
+    float: left;
+}
+
+body #navAddressWrapper #navAddress address {
+    background: #001A4B;
+    float: right;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+	padding: 10px;
+    text-align: center;  
+}
+
+.div {
+    display: block;
+}
+
+.hidethese {
+    display: none;
+}
