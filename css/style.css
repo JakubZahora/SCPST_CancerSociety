@@ -1,27 +1,14 @@
 /** This is the CSS page for our website. */
 
-@media screen and (max-width: 980px) {
-.body #headerWrapper #navAddressWrapper #navAddress
-address {
-    padding-left: 0;
-    padding-right: 14px;
-    }
-}
-
-.a {
+/* .a {
     color: #008998;
     text-decoration: none;
     transition: color 0.25s;
-}
+} */
 
-.body #headerWrapper {
+/* .body #headerWrapper {
     background: #FFF;
     padding: 0 0 2px;
-}
-
-.body #headerWrapper #navAddressWrapper #navAddress address {
-    background: #001A4B;
-    float: right;
 }
 
 .body #headerWrapper #navAddressWrapper {
@@ -31,21 +18,14 @@ address {
     border-top: 1 px solid;
 }
 
-.body #headerWrapper #navAddressWrapper #navAddress {
-    margin: 0 auto;
-    max-width: 1140px;
-}
-
-.body #headerWrapper #navAddressWrapper #navAddress
-address a {
-    display: block;
-    float: left;
-}
-
-body #navAddressWrapper #navAddress address {
+.body #navAddressWrapper #navAddress address {
     background: #001A4B;
     float: right;
-}
+} */
+
+/* .div {
+    display: block;
+} */
 
 .center {
     margin: auto;
@@ -54,10 +34,15 @@ body #navAddressWrapper #navAddress address {
     text-align: center;  
 }
 
-.div {
-    display: block;
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #001A4B;
+    justify-content: flex-end;
 }
 
-.hidethese {
-    display: none;
+.icon-container > div {
+    background-color: transparent;
+    width: auto;
+    margin: 10px;
 }
