@@ -15,6 +15,11 @@
         <meta name= "viewport" content= "width=device-width, initial-scale=1">
         <title>Home - The Cancer Support Center</title>
         <link rel= "stylesheet" href= "css\style.css">
+        <script>
+            function myFunction(num) {
+            document.getElementById("myDropdown" + num).classList.toggle("show");
+        }
+        </script>
     </head>
     <body>
         <header id="header"></header>
@@ -69,6 +74,71 @@
                 hope that by browsing our site, it will help give you comfort and support in a time
                 where those aspects are needed.
             </h4>
+        </div>
+        <div class="navbar">
+            <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction(1)">Programs and Activities
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown1">
+              <a href="#">Kick It Cancer</a>
+              <a href="#">Zoom Programming</a>
+              <a href="#">On Demand Programming</a>
+              <a href="#">CSC 5 Point Model</a>
+              <a href="#">Calendar Grid and Zoom Registration</a>
+              <a href="#">Participant Forms</a>
+              <a href="#">Newsletters</a>
+            </div>
+            </div>
+
+            <div class="dropdown">                
+            <button class="dropbtn" onclick="myFunction(2)">Information and Resources
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
+            <a href="#">Hospital Partnerships</a>
+            <a href="#">Cancer Support Links</a>
+            <a href="#">Library Resource Center</a>
+            <a href="#">Financial</a>
+            <a href="#">Transportation Services</a>
+            </div>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction(3)">About the Center
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown3">
+            <a href="#">Staff</a>
+            <a href="#">Board of Directors</a>
+            <a href="#">Ancillary Boards</a>
+            <a href="#">In the News</a>
+            <a href="#">CSC Annual Report</a>
+            <a href="#">Contact Us</a>
+            </div>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction(4)">Support the Center
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown4">
+            <a href="#">Volunteer Opportunities</a>
+            <a href="http://www.villagedoor.com/" target="_blank">Consignment Shop</a>
+            <a href="#">Donate</a>
+            </div>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction(5)">Special Events
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown5">
+            <a href="#">Annual Golf Outing</a>
+            <a href="#">2020 Virtual FALL Walk of Hope</a>
+            <a href="#">2020 Fall Un-Gala</a>
+            <a href="#">Third Party Community Events</a>
+            <a href="#">Take a Bite Out of Cancer</a>
         </div>
     </body>
 </html>
