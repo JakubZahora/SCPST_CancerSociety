@@ -180,6 +180,75 @@ width: 50%;
 }
 
 .location-imgs {
-margin-bottom: 10px;
-padding-right: 75px;
+margin: 10px auto 20px;
+display: block;
+}
+
+/* .Mokena_Phone {
+width: 25%;
+}
+
+.Mokena_InPerson {
+width: 25%;
+} */
+
+.hours-container {
+background-color: rgb(215, 255, 248);
+}
+
+.body > .footer > .container {
+font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type=email], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type=tel], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type=submit] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+.container {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
 }

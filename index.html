@@ -18,7 +18,6 @@
     </head>
     <body>
         <header id="header">
-        </header>
         <div class = icon-container>
             <div>
                 <a href="https://www.facebook.com/pages/The-Cancer-Support-Center/113271178690597"
@@ -68,9 +67,12 @@
             <h4>Hello and welcome to the Cancer Support Center! On this website, you will find
                 multiple resources for you and your loved one(s) who are dealing with cancer. We
                 hope that by browsing our site, it will help give you comfort and support in a time
-                where those aspects are needed.
+                where those aspects are needed.<br><br>
+                If you'd like to make a donation to the Center, you can do so 
+                <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank">here</a>.
             </h4>
         </div>
+        </header>
         <div class="navbar">
             <div class="dropdown">
             <button class="dropbtn" onclick="myFunction(1)">Programs and Activities
@@ -121,7 +123,7 @@
             <div class="dropdown-content" id="myDropdown4">
             <a href="#">Volunteer Opportunities</a>
             <a href="http://www.villagedoor.com/" target="_blank">Consignment Shop</a>
-            <a href="#">Donate</a>
+            <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank">Donate</a>
             </div>
             </div>
 
@@ -163,7 +165,8 @@
             <div class = header-3><h3>PROGRAMS</h3></div>
             <figcaption>The Cancer Support Center offers various programs for those affected by cancer at no charge to 
                 participants. From networking groups to cooking demonstrations and yoga, there are plenty of programs 
-                for you to take advantage of. Click <a href="https://cancersupportcenter.org/programs-activities">here</a> to see all of our upcoming programs.</figcaption>
+                for you to take advantage of. 
+                Click <a href="https://cancersupportcenter.org/programs-activities">here</a> to see all of our upcoming programs.</figcaption>
         </figure>
         <figure>
             <img src="css/team-standing-together.jpg" alt="team" class="center-imgs">
@@ -175,6 +178,7 @@
         </figure>
 
         <footer>
+            <section class = hours-container>
             <div class = leftFooter>
                 <div class = other-locations><h4>Other Cancer Support Center Locations</h4></div>
                 <div class = "location1 left"><h3>Homewood Location</h3>
@@ -184,7 +188,7 @@
                     <a href="https://www.google.com/maps/place/2028+Elm+Rd,+Homewood,+IL+60430/
                     @41.5639727,-87.6685086,17z/data=!3m1!4b1!4m5!3m4!1s0x880e1865b9027a59:0xdc469a9127467e84!8m2!3d41.
                     5639727!4d-87.6663199?hl=en" target="_blank">
-                    Map & Directions</a> target<br>
+                    Map & Directions</a><br>
                     Phone: (708) 798-9171<br>
                     Fax: (708) 798-0052            
                 </p>
@@ -202,9 +206,70 @@
                 Phone: (708) 478-3529<br>
                 Fax: (708) 478-4066
                 </p>
-                <img src="css/other-locations.jpg" alt="other locations" class="location-imgs">
                 </div>
             </div>
+            <img class="location-imgs" img src="css/other-locations.jpg" alt="other locations">
+
+            <h3>Drop-In Hours</h3>
+                <b>By Phone:</b>
+                <p>We are open and available to provide phone support during all regular business hours and this is the best way to contact us during this time.<br></p>
+                    <div class = "Homewood_Phone"><b>Homewood:</b><br>
+                    Monday: 9am-5pm<br>
+                    Tuesday: 9am-5pm<br>
+                    Wednesday: 9am-5pm<br>
+                    Thursday: 9am-4pm<br>
+                    Friday: 9am-12pm
+                    </div>
+                    <div class ="Mokena_Phone"><b>Mokena</b><br>
+                    Monday: 9am-4pm<br>
+                    Tuesday: 9am-4pm<br>
+                    Wednesday: 12pm-4pm<br>
+                    Thursday: 9am-4pm<br>
+                    Friday: 9am-12pm
+                    </div><br>
+                <b>In-person:</b>
+                <p>The Cancer Support Center doors are open during these hours to assist new<br>
+                    participants’ in-person with immediate needs and scheduling remote appointments.<br><br>
+                    <b><u>Please do not visit The Center in a social capacity at this time.</u></b><br>
+                    <b><u>Wigs are by appointment only - no exceptions.</u></b><br><br>
+                    If you are able to access our services by phone or on our website, please do so for your safety and the safety of our staff. If you do visit The Center you must follow our safety guidelines. You can access our guidelines <a href="ReOpeningParticipantInstructions.docx">here</a>.
+                    <br>
+                    <div class = "Homewood_InPerson"><b>Homewood:</b><br>
+                        Monday: 9am-12pm<br>
+                        Tuesday: 12pm-3pm<br>
+                        Thursday: 9am-12pm<br>
+                        </div><br>
+                        <div class ="Mokena_InPerson"><b>Mokena</b><br>
+                        Monday: 12pm-3pm<br>
+                        Tuesday: 9am-12pm<br>
+                        Thursday: 9am-12pm<br>
+                    </div>
+                </p>
+            </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <h3>Contact Form</h3>
+            <p>Have any questions or comments you'd like to send us? Feel free to contact us through the contact form below.<br><br>
+                Fields with a * are required to be filled out</p>
+        
+        <form action="/action_page.php">
+            <label for="fname">First Name*</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your name here...">
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here...">
+
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" id="phone_number" name="phone_number" placeholder="Enter your phone number here...">
+
+            <label for="subject">Subject*</label>
+            <textarea id="subject" name="subject" placeholder="Write here..." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        </div>
         </footer>
     </body>
 </html>
