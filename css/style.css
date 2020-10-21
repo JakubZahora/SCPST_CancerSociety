@@ -46,7 +46,7 @@ font-size: 16px;
 border: none;
 outline: none;
 color: white;
-padding: 14px 16px;
+padding: 14px 40px; /* Moves dropdown content over - so I can make it more centered*/
 background-color: inherit;
 font-family: inherit;
 margin: 0;
@@ -82,6 +82,7 @@ background-color: #ddd;
 display: block;
 }
 
+/* Wraps location information in a box*/
 * {
 box-sizing: border-box;
 }
@@ -184,13 +185,41 @@ margin: 10px auto 20px;
 display: block;
 }
 
-/* .Mokena_Phone {
-width: 25%;
+.row-1 > .column-1 {
+box-sizing: border-box;
 }
 
-.Mokena_InPerson {
+.row-2 > .column-2 {
+box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column-1 {
+float: left;
 width: 25%;
-} */
+padding: 10px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column-2 {
+float: left;
+width: 25%;
+padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row-1:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Clear floats after the columns */
+.row-2:after {
+content: "";
+display: table;
+clear: both;
+}
 
 .hours-container {
 background-color: rgb(215, 255, 248);
@@ -251,4 +280,8 @@ background-color: #45a049;
 border-radius: 5px;
 background-color: #f2f2f2;
 padding: 20px;
+}
+
+.volunteer-images {
+text-align: center;
 }
