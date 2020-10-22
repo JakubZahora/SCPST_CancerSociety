@@ -47,14 +47,14 @@ class Header extends HTMLElement {
           </div>
           </div>
           <div class="center">
-              <img src="css/Cancer_Support_Center.png" width="300" height="82" alt="Cancer Support Center">
-              <h4>Hello and welcome to the Cancer Support Center! On this website, you will find
-                  multiple resources for you and your loved one(s) who are dealing with cancer. We
-                  hope that by browsing our site, it will help give you comfort and support in a time
-                  where those aspects are needed.<br><br>
-                  If you'd like to make a donation to the Center, you can do so 
-                  <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank">here</a>.
-              </h4>
+            <a href="index.html"><img src="css/Cancer_Support_Center.png" width="300" height="82" alt="Cancer Support Center"></a>
+            <h4>Hello and welcome to the Cancer Support Center! On this website, you will find
+                multiple resources for you and your loved one(s) who are dealing with cancer. We
+                hope that by browsing our site, it will help give you comfort and support in a time
+                where those aspects are needed.<br><br>
+                If you'd like to make a donation to the Center, you can do so 
+                <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank">here</a>.
+            </h4>
           </div>
           <div class="navbar">
           <div class="dropdown">
