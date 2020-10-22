@@ -376,24 +376,22 @@ text-align: center;
     display: table;
     padding: 30px;
   }
-  #logo{
+  #logo {
     padding-right: 130px;
     float: right;
-
   }
 
-  #paragraphHeading{
+  #paragraphHeading {
     padding-top: 60px;
-
   }
+
   .rowBooks::after {
     content: "";
     clear: both;
     display: table;
-
   }
 
-  .centerImages{
+  .centerImages {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -415,5 +413,29 @@ text-align: center;
     background-color:#1e5477; 
     border-radius: 12px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .bod-center {
+    text-align: center;
+  }
+  
+  .members-center {
+    text-align: center;
+  }
+  
+  .report-center {
+    text-align: center;
+  }
+  
+  .report-container-1 {
+    text-align: center;
+  }
+  
+  .report-container-2 {
+    text-align: center;
+  }
+  
+  .report-container-3 {
+    text-align: center;
   }
   
