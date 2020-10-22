@@ -57,73 +57,72 @@ class Header extends HTMLElement {
               </h4>
           </div>
           <div class="navbar">
-              <div class="dropdown">
-              <button class="dropbtn" onclick="myFunction(1)">Programs and Activities
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown1">
-                <a href="#">Kick It Cancer</a>
-                <a href="#">Zoom Programming</a>
-                <a href="#">On Demand Programming</a>
-                <a href="#">CSC 5 Point Model</a>
-                <a href="#">Calendar Grid and Zoom Registration</a>
-                <a href="#">Participant Forms</a>
-                <a href="#">Newsletters</a>
-              </div>
-              </div>
-  
-              <div class="dropdown">                
-              <button class="dropbtn" onclick="myFunction(2)">Information and Resources
-                  <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown2">
-              <a href="#">Hospital Partnerships</a>
-              <a href="#">Cancer Support Links</a>
-              <a href="#">Library Resource Center</a>
-              <a href="#">Financial</a>
-              <a href="#">Transportation Services</a>
-              </div>
-              </div>
-  
-              <div class="dropdown">
-              <button class="dropbtn" onclick="myFunction(3)">About the Center
-                  <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown3">
-              <a href="#">Staff</a>
-              <a href="#">Board of Directors</a>
-              <a href="#">Ancillary Boards</a>
-              <a href="#">In the News</a>
-              <a href="#">CSC Annual Report</a>
-              <a href="#">Contact Us</a>
-              </div>
-              </div>
-  
-              <div class="dropdown">
-              <button class="dropbtn" onclick="myFunction(4)">Support the Center
-                  <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown4">
-              <a href="volunteer.html" target="_blank">Volunteer Opportunities</a>
-              <a href="http://www.villagedoor.com/" target="_blank">Consignment Shop</a>
-              <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank">Donate</a>
-              </div>
-              </div>
-  
-              <div class="dropdown">
-              <button class="dropbtn" onclick="myFunction(5)">Special Events
-                  <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown5">
-              <a href="#">Annual Golf Outing</a>
-              <a href="#">2020 Virtual FALL Walk of Hope</a>
-              <a href="#">2020 Fall Un-Gala</a>
-              <a href="#">Third Party Community Events</a>
-              <a href="#">Take a Bite Out of Cancer</a>
-              </div>
-              </div>
+          <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction(1)">Programs and Activities
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown1">
+            <a href="#">Kick It Cancer</a>
+            <a href="#">Zoom Programming</a>
+            <a href="#">On Demand Programming</a>
+            <a href="#">CSC 5 Point Model</a>
+            <a href="#">Calendar Grid and Zoom Registration</a>
+            <a href="#">Participant Forms</a>
+            <a href="#">Newsletters</a>
           </div>
-          <script src="js/cancersite.js"></script>
+          </div>
+
+          <div class="dropdown">                
+          <button class="dropbtn" onclick="myFunction(2)">Information and Resources
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown2">
+          <a href="hospitalPartnerships.html" target="_blank">Hospital Partnerships</a>
+          <a href="cancerSupportLinks.html" target="_blank">Cancer Support Links</a>
+          <a href="libraryResourceCenter.html" target="_blank">Library Resource Center</a>
+          <a href="financial.html" target="_blank">Financial</a>
+          <a href="transportation.html" target="_blank">Transportation Services</a>
+          </div>
+          </div>
+
+          <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction(3)">About the Center
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown3">
+          <a href="staff.html" target="_blank">Staff</a>
+          <a href="board.html" target="_blank">Board of Directors</a>
+          <a href="ancillary-boards.html" target="_blank">Ancillary Boards</a>
+          <a href="news.html" target="_blank">In the News</a>
+          <a href="annual-report.html" target="_blank">CSC Annual Report</a>
+          <a href="contact.html" target="_blank">Contact Us</a>
+          </div>
+          </div>
+
+          <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction(4)">Support the Center
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown4">
+          <a href="volunteer.html" target="_blank">Volunteer Opportunities</a>
+          <a href="http://www.villagedoor.com/" target="_blank">Consignment Shop</a>
+          <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank">Donate</a>
+          </div>
+          </div>
+
+          <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction(5)">Special Events
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown5">
+          <a href="#">Annual Golf Outing</a>
+          <a href="#">2020 Virtual FALL Walk of Hope</a>
+          <a href="#">2020 Fall Un-Gala</a>
+          <a href="#">Third Party Community Events</a>
+          <a href="#">Take a Bite Out of Cancer</a>
+          </div>
+          </div>
+      </div>          
       </nav>
       `;
     }
