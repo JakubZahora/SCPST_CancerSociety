@@ -1,10 +1,50 @@
 /** This is the CSS page for our website. */
 
-.center {
-  margin: auto;
-  width: 60%;
-  padding: 10px;
-  text-align: center;  
+.header-logo {
+  position: relative;
+}
+
+.donate-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.donate-button {
+  background-color: #269CE9;
+  border-color: #269CE9;
+}
+
+.donate-button {
+  color: #f2f2f2
+}
+
+.donate-button{
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  user-select: none;
+}
+
+.donate-button {
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3)), rgba(255,255,255,0);
+}
+
+.donate-button {
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.donate-button:hover{
+  background-color: #70B9E8;
+}
+
+.donate-button:active{
+  background: #269CE9;
+}
+
+.donate-button{
+  border-radius: 6px;
+  margin: 3px 4px 5px;
+  height: 50px;
+  padding: 4px 1.5em 4px 2em;
 }
 
 .icon-container {
@@ -22,7 +62,7 @@
 
 .navbar {
 overflow: hidden;
-background-color: #333;
+background-color: #001A4B;
 font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -46,14 +86,14 @@ font-size: 16px;
 border: none;
 outline: none;
 color: white;
-padding: 14px 40px; /* Moves dropdown content over - so I can make it more centered*/
+padding: 10px 15px; /* Moves dropdown content over - so I can make it more centered*/
 background-color: inherit;
 font-family: inherit;
 margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-background-color: red;
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn {
+background-color: #70B9E8;
 }
 
 .dropdown-content {
@@ -78,9 +118,13 @@ text-align: left;
 background-color: #ddd;
 }
 
-.show {
+.dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+/* .show {
 display: block;
-}
+} */
 
 /* Wraps location information in a box*/
 * {
@@ -125,8 +169,7 @@ to {opacity: 1}
 
 iframe {
 margin: auto;
-width: 60%;
-border: 3px solid #73AD21;
+width: 40%;
 padding: 10px;
 display: block;
 }
@@ -225,11 +268,12 @@ clear: both;
 background-color: rgb(215, 255, 248);
 }
 
-.body > .footer > .container {
+.body > .container {
 font-family: Arial, Helvetica, sans-serif;
 box-sizing: border-box;
 }
 
+/* CSS for contact us form */
 input[type=text], select, textarea {
 width: 100%;
 padding: 12px;
@@ -282,10 +326,6 @@ background-color: #f2f2f2;
 padding: 20px;
 }
 
-.volunteer-images {
-text-align: center;
-}
-
 /*Resource Info*/
 .titlePage {
   text-align:left;
@@ -305,6 +345,7 @@ text-align: center;
   padding-top: 10px;
   font-style: italic;
 }
+
 .subHeadings{
   text-align: left;
   font-size: 30px;
@@ -321,121 +362,765 @@ text-align: center;
   padding: 10px;
 
 }
-  #p1{
-    margin-left: 40px;
-    margin-right: 40px;
-    font-family: bold;
-    text-align: center;
-    font-size: 20px;
-  }
-  #specialMessage{
-    color: navy;
-    font-style: italic;
-    text-align: center;
-  }
-  p{
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-top: 15px;
-    font-size: 20px;
-    
-    
-  }
-  #library{
-    float: right;
-    padding: 40px;
-    margin-top: -15px;
 
-  }
-  li{
-    font-size: 20px;
-    margin-left:60px ;
-  }
+#p1{
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: bold;
+  text-align: center;
+  font-size: 20px;
+}
+
+#specialMessage{
+  color: navy;
+  font-style: italic;
+  text-align: center;
+}
+
+p{
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 15px;
+  font-size: 20px;   
+}
+
+#library{
+  float: right;
+  padding: 40px;
+  margin-top: -15px;
+
+}
+li{
+  font-size: 20px;
+  margin-left:60px ;
+}
 
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-    padding: 30px;
-  }
-  .row2::after {
-    content: "";
-    clear: both;
-    display: table;
-    padding: 30px;
-  }
-  #logo {
-    padding-right: 130px;
-    float: right;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  #paragraphHeading {
-    padding-top: 60px;
-  }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
-  .rowBooks::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 30px;
+}
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 30px;
+}
+#logo {
+  padding-right: 130px;
+  float: right;
+}
 
-  .centerImages {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
+#paragraphHeading {
+  padding-top: 60px;
+}
 
-  .button {
-    position: absolute;
-    left: 30%;
-    border: none;
-    color: white;
-    padding: 25px 90px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 36px;
-    margin: 4px 2px;
-    cursor: pointer;
-    background-color:#1e5477; 
-    border-radius: 12px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
+.rowBooks::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  .bod-center {
-    text-align: center;
-  }
-  
-  .members-center {
-    text-align: center;
-  }
-  
-  .report-center {
-    text-align: center;
-  }
-  
-  .report-container-1 {
-    text-align: center;
-  }
-  
-  .report-container-2 {
-    text-align: center;
-  }
-  
-  .report-container-3 {
-    text-align: center;
-  }
-  
+.centerImages {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.button {
+  position: absolute;
+  left: 30%;
+  border: none;
+  color: white;
+  padding: 25px 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color:#1e5477; 
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.bod-center {
+  text-align: center;
+}
+
+.members-center {
+  text-align: center;
+}
+
+.report-center {
+  text-align: center;
+}
+
+.report-container-1 {
+  text-align: center;
+}
+
+.report-container-2 {
+  text-align: center;
+}
+
+.report-container-3 {
+  text-align: center;
+}
+
+.staff-photos-1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.staff-photos-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.staff-photos-3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.staff-text-1 {
+  text-align: center;
+}
+
+.staff-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff-container-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .staff-text-2 {
+  width: 55%;
+  padding: 10px;
+  text-align: center;
+}
+
+.staff-text-2-1 {
+  text-align: center;
+}
+
+.staff-text-2-2 {
+  float: right;
+  width: 25%;
+  padding: 10px;
+}
+
+.staff-text-3 {
+  width: 55%;
+  padding: 10px;
+  text-align: center;
+}
+
+.staff-text-3-1 {
+  text-align: center;
+}
+
+.staff-text-3-2 {
+  float: right;
+  width: 25%;
+  padding: 10px;
+} */
+
+.staff-text-other {
+  text-align: center;
+}
+
+.staff-rows:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.news-text {
+  text-align: center;
+}
+
+.ancillary-text {
+  text-align: center;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.volunteer-text {
+  text-align: center;
+}
+
+.volunteer-text-2 {
+  text-align: center;
+}
+
+.volunteer-text-3 {
+  text-align: center;
+}
+
+.volunteer-text-4 {
+  text-align: center;
+}
+
+.volunteer-images {
+  text-align: center;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.contact-text-2 {
+  text-align: center;
+}
+
+.contact-text-3 {
+  text-align: center;
+}
+
+.contact-text-4 {
+  text-align: center;
+}
+
+/* CSS for registration form 1 */
+.volunteer-form-section-1{
+	max-width: 600px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.volunteer-form-section-1 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.volunteer-form-section-1 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.volunteer-form-section-1 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.volunteer-form-section-1 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.volunteer-form-section-1 ul li .field-split{
+	width: 49%;
+}
+.volunteer-form-section-1 ul li .field-full{
+	width: 100%;
+}
+.volunteer-form-section-1 ul li input.align-left{
+	float:left;
+}
+.volunteer-form-section-1 ul li input.align-right{
+	float:right;
+}
+.volunteer-form-section-1 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.volunteer-form-section-1 ul li input[type="button"], 
+.volunteer-form-section-1 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.volunteer-form-section-1 ul li input[type="button"]:hover, 
+.volunteer-form-section-1 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+
+/* CSS for checkboxes on registration form 1*/
+.volunteer-form-section-1 .interest-checkboxes ul, .interest-checkboxes li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.volunteer-form-section-1 .interest-checkboxes li {
+    display:inline-block;
+    width:33.3333%;
+}
+
+/* CSS for registration form 2 */
+.volunteer-form-section-2{
+	max-width: 600px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.volunteer-form-section-2 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.volunteer-form-section-2 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.volunteer-form-section-2 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.volunteer-form-section-2 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.volunteer-form-section-2 ul li .field-split{
+	width: 49%;
+}
+.volunteer-form-section-2 ul li .field-full{
+	width: 100%;
+}
+.volunteer-form-section-2 ul li input.align-left{
+	float:left;
+}
+.volunteer-form-section-2 ul li input.align-right{
+	float:right;
+}
+.volunteer-form-section-2 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.volunteer-form-section-2 ul li input[type="button"], 
+.volunteer-form-section-2 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.volunteer-form-section-2 ul li input[type="button"]:hover, 
+.volunteer-form-section-2 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+
+/* CSS for checkboxes on registration form 2*/
+.volunteer-form-section-2 .availability-checkboxes ul, .availability-checkboxes li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.volunteer-form-section-2 .availability-checkboxes li {
+    display:inline-block;
+    width:33.3333%;
+}
+
+/* CSS for registration form 3 */
+.volunteer-form-section-3{
+	max-width: 600px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.volunteer-form-section-3 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.volunteer-form-section-3 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.volunteer-form-section-3 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.volunteer-form-section-3 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.volunteer-form-section-3 ul li .field-split{
+	width: 49%;
+}
+.volunteer-form-section-3 ul li .field-full{
+	width: 100%;
+}
+.volunteer-form-section-3 ul li input.align-left{
+	float:left;
+}
+.volunteer-form-section-3 ul li input.align-right{
+	float:right;
+}
+.volunteer-form-section-3 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.volunteer-form-section-3 ul li input[type="button"], 
+.volunteer-form-section-3 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.volunteer-form-section-3 ul li input[type="button"]:hover, 
+.volunteer-form-section-3 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+
+/* CSS for registration form 4 */
+.volunteer-form-section-4{
+	max-width: 600px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.volunteer-form-section-4 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.volunteer-form-section-4 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.volunteer-form-section-4 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.volunteer-form-section-4 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.volunteer-form-section-4 ul li .field-split{
+	width: 49%;
+}
+.volunteer-form-section-4 ul li .field-full{
+	width: 100%;
+}
+.volunteer-form-section-4 ul li input.align-left{
+	float:left;
+}
+.volunteer-form-section-4 ul li input.align-right{
+	float:right;
+}
+.volunteer-form-section-4 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.volunteer-form-section-4 ul li input[type="button"], 
+.volunteer-form-section-4 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.volunteer-form-section-4 ul li input[type="button"]:hover, 
+.volunteer-form-section-4 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+
+/* CSS for registration form 5 */
+.volunteer-form-section-5 {
+	max-width: 600px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.volunteer-form-section-5 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.volunteer-form-section-5 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.volunteer-form-section-5 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.volunteer-form-section-5 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.volunteer-form-section-5 ul li .field-split{
+	width: 49%;
+}
+.volunteer-form-section-5 ul li .field-full{
+	width: 100%;
+}
+.volunteer-form-section-5 ul li input.align-left{
+	float:left;
+}
+.volunteer-form-section-5 ul li input.align-right{
+	float:right;
+}
+.volunteer-form-section-5 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.volunteer-form-section-5 ul li input[type="button"], 
+.volunteer-form-section-5 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.volunteer-form-section-5 ul li input[type="button"]:hover, 
+.volunteer-form-section-5 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+
+/* CSS for registration form 6 */
+.volunteer-form-section-6 {
+	max-width: 600px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.volunteer-form-section-6 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.volunteer-form-section-6 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.volunteer-form-section-6 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.volunteer-form-section-6 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.volunteer-form-section-6 ul li .field-split{
+	width: 49%;
+}
+.volunteer-form-section-6 ul li .field-full{
+	width: 100%;
+}
+
+.volunteer-form-section-6 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.volunteer-form-section-6 ul li input[type="button"], 
+.volunteer-form-section-6 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.volunteer-form-section-6 ul li input[type="button"]:hover, 
+.volunteer-form-section-6 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+
+.volunteer-form-section-7 {
+	max-width: 600px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.volunteer-form-section-7 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.volunteer-form-section-7 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.volunteer-form-section-7 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.volunteer-form-section-7 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.volunteer-form-section-7 ul li .field-split{
+	width: 49%;
+}
+.volunteer-form-section-7 ul li .field-full{
+	width: 100%;
+}
+
+.volunteer-form-section-7 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.volunteer-form-section-7 ul li input[type="button"], 
+.volunteer-form-section-7 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.volunteer-form-section-7 ul li input[type="button"]:hover, 
+.volunteer-form-section-7 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+
+.volunteer-form-end-text {
+  text-align: center;
+}

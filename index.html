@@ -15,71 +15,22 @@
         <meta name= "viewport" content= "width=device-width, initial-scale=1">
         <title>Home - The Cancer Support Center</title>
         <link rel= "stylesheet" href= "css\style.css">
-        <script src="js/cancersite.js"></script>
+        <!-- <script src="js/cancersite.js"></script> -->
         <script src="js/slideshow.js" defer></script>
     </head>
     <body>
-        <div class="header">
-        <div class = icon-container>
-            <div>
-                <a href="https://www.facebook.com/pages/The-Cancer-Support-Center/113271178690597"
-                target="_blank"><img src="css/FB-f-Logo__white_50.png"
-                width="36px" height="36px" margin: 5px
-                alt="Facebook"></a>
-            </div>
-
-            <div>
-                <a href="mailto:csc@cancersupportcenter.org">
-                <img src="css/icon-social-email-cancersupportcenter.png"
-                width="36px" height="36px" margin: 5px
-                alt="Email"></a>
-            </div>
-
-            <div>
-                <a href="https://www.instagram.com/the_cancer_support_center/"
-                target="_blank">
-                <img src="css/instagram-logo_white-cancersupportcenter.png"
-                width="36px" height="36px" margin: 5px
-                alt="Instagram"></a>
-            </div>
-
-            <div>
-                <a href="https://www.pinterest.com/thecsc/" target="_blank">
-                <img src="css/Pinterest-badge-cancersupportcenter.png"
-                width="36px" height="36px" margin: 5px
-                alt="Pinterest"></a>
-            </div>
-
-            <div>
-                <a href="https://twitter.com/The_CSC" target="_blank">
-                <img src="css/Twitter_Logo_White_On_Blue.png"
-                width="36px" height="36px" margin: 5px
-                alt="Twitter"></a>
-            </div>            
-
-            <div>
-                <a href="https://youtu.be/JfWB6jOE5pw">
-                <img src="css/YouTube-social-square_red_48px.png"
-                width="36px" height="36px" margin: 5px
-                alt="YouTube"></a>
-            </div>
+        <header>
+        <div class="header-logo">
+            <a href="index.html"><img src="css/Cancer_Support_Center.png" width="250" height="75" alt="Cancer Support Center"></a>
         </div>
-        <div class="center">
-            <a href="index.html"><img src="css/Cancer_Support_Center.png" width="300" height="82" alt="Cancer Support Center"></a>
-            <h4>Hello and welcome to the Cancer Support Center! On this website, you will find
-                multiple resources for you and your loved one(s) who are dealing with cancer. We
-                hope that by browsing our site, it will help give you comfort and support in a time
-                where those aspects are needed.<br><br>
-                If you'd like to make a donation to the Center, you can do so 
-                <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank">here</a>.
-            </h4>
-        </div>
+        <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank"><button class = donate-button>Donate Here</button></a>
         <div class="navbar">
             <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction(1)">Programs and Activities
-              <i class="fa fa-caret-down"></i>
+            <a href="programs-and-activities.html" target="_blank">
+            <button class="dropbtn">Programs and Activities</a>
+                <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="myDropdown1">
+            <div class="dropdown-content">
               <a href="#">Kick It Cancer</a>
               <a href="#">Zoom Programming</a>
               <a href="#">On Demand Programming</a>
@@ -90,11 +41,12 @@
             </div>
             </div>
 
-            <div class="dropdown">                
-            <button class="dropbtn" onclick="myFunction(2)">Information and Resources
+            <div class="dropdown"> 
+            <a href="info-and-resources.html" target="_blank">  
+            <button class="dropbtn">Information and Resources</a>
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="myDropdown2">
+            <div class="dropdown-content">
             <a href="hospitalPartnerships.html" target="_blank">Hospital Partnerships</a>
             <a href="cancerSupportLinks.html" target="_blank">Cancer Support Links</a>
             <a href="libraryResourceCenter.html" target="_blank">Library Resource Center</a>
@@ -104,10 +56,11 @@
             </div>
 
             <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction(3)">About the Center
+            <a href="about-center.html" target="_blank"> 
+            <button class="dropbtn">About the Center</a>
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="myDropdown3">
+            <div class="dropdown-content">
             <a href="staff.html" target="_blank">Staff</a>
             <a href="board.html" target="_blank">Board of Directors</a>
             <a href="ancillary-boards.html" target="_blank">Ancillary Boards</a>
@@ -118,10 +71,11 @@
             </div>
 
             <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction(4)">Support the Center
+            <a href="support-center.html" target="_blank"> 
+            <button class="dropbtn">Support the Center</a>
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="myDropdown4">
+            <div class="dropdown-content">
             <a href="volunteer.html" target="_blank">Volunteer Opportunities</a>
             <a href="http://www.villagedoor.com/" target="_blank">Consignment Shop</a>
             <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank">Donate</a>
@@ -129,10 +83,11 @@
             </div>
 
             <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction(5)">Special Events
+            <a href="special-events.html" target="_blank"> 
+            <button class="dropbtn">Special Events</a>
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="myDropdown5">
+            <div class="dropdown-content">
             <a href="annualGolfOuting.html" target="_blank">Annual Golf Outing</a>
             <a href="2020VirtualFallWalkofHope.html" target="_blank">2020 Virtual FALL Walk of Hope</a>
             <a href="2020FallUnGala.html" target="_blank">2020 Fall Un-Gala</a>
@@ -177,12 +132,11 @@
                 to see more opportunities and fill out a contact form.</figcaption>
         </figure>
 
-        <footer>
-        </footer>
         <section class = hours-container>
             <div class = leftFooter>
                 <div class = other-locations><h2>Cancer Support Center Locations</h2></div>
                 <div class = "location1 left"><h3>Homewood Location</h3>
+                <div class = "homewood-text">
                 <p>2028 Elm Road, Homewood, Illinois 60430<br>
                     (west of the corner of Dixie Highway and<br>
                     Elm Road)<br>
@@ -190,23 +144,22 @@
                     @41.5639727,-87.6685086,17z/data=!3m1!4b1!4m5!3m4!1s0x880e1865b9027a59:0xdc469a9127467e84!8m2!3d41.
                     5639727!4d-87.6663199?hl=en" target="_blank">
                     Map & Directions</a><br>
-                    Phone: (708) 798-9171<br>
-                    Fax: (708) 798-0052            
+                    Phone: <a href="tel:+1-708-798-9171">+1 (708) 798-9171</a><br>
+                    Fax: <a href="tel:+1-708-798-0052">+1 (708) 798-0052</a>          
                 </p>
                 </div>
             </div>
+            </div>
 
-            <div class = rightFooter>                
                 <div class = "location2 right"><h3>Mokena Location</h3>
-                <p>19645 S. LaGrange Road, Mokena, Illinois 60448<br>
+                19645 S. LaGrange Road, Mokena, Illinois 60448<br>
                 (east side of S. LaGrange Road)<br>
                 <a href="https://www.google.com/maps/place/19657+South+La+Grange+Road,+Mokena,+IL+60448/
                 @41.5325464,-87.8518694,17z/data=!3m1!4b1!4m5!3m4!1s0x880e14d18d74caa3:0x56cfe67921af0953!8m2!3d41
                 .5325464!4d-87.8496807?hl=en" target="_blank">
                 Map & Directions</a><br>
-                Phone: (708) 478-3529<br>
-                Fax: (708) 478-4066
-                </p>
+                Phone: <a href="tel:+1-708-478-3529">+1 (708) 478-3529</a><br>
+                Fax: <a href="tel:+1-708-478-4066">+1 (708) 478-4066</a>
                 </div>
             </div>
             <img class="location-imgs" img src="css/other-locations.jpg" alt="other locations">
@@ -259,5 +212,51 @@
                     </div>
                 </p>
         </section>
+        <footer>
+            <div class = icon-container>
+                <div>
+                    <a href="https://www.facebook.com/pages/The-Cancer-Support-Center/113271178690597"
+                    target="_blank"><img src="css/FB-f-Logo__white_50.png"
+                    width="36px" height="36px" margin: 5px
+                    alt="Facebook"></a>
+                </div>
+    
+                <div>
+                    <a href="mailto:csc@cancersupportcenter.org">
+                    <img src="css/icon-social-email-cancersupportcenter.png"
+                    width="36px" height="36px" margin: 5px
+                    alt="Email"></a>
+                </div>
+    
+                <div>
+                    <a href="https://www.instagram.com/the_cancer_support_center/"
+                    target="_blank">
+                    <img src="css/instagram-logo_white-cancersupportcenter.png"
+                    width="36px" height="36px" margin: 5px
+                    alt="Instagram"></a>
+                </div>
+    
+                <div>
+                    <a href="https://www.pinterest.com/thecsc/" target="_blank">
+                    <img src="css/Pinterest-badge-cancersupportcenter.png"
+                    width="36px" height="36px" margin: 5px
+                    alt="Pinterest"></a>
+                </div>
+    
+                <div>
+                    <a href="https://twitter.com/The_CSC" target="_blank">
+                    <img src="css/Twitter_Logo_White_On_Blue.png"
+                    width="36px" height="36px" margin: 5px
+                    alt="Twitter"></a>
+                </div>            
+    
+                <div>
+                    <a href="https://youtu.be/JfWB6jOE5pw">
+                    <img src="css/YouTube-social-square_red_48px.png"
+                    width="36px" height="36px" margin: 5px
+                    alt="YouTube"></a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
