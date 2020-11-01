@@ -4,41 +4,57 @@ class Header extends HTMLElement {
       <nav>
       <div class="header-logo">
       <a href="index.html"><img src="css/Cancer_Support_Center.png" width="250" height="75" alt="Cancer Support Center"></a>
-  </div>
+    </div>
   <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank"><button class = donate-button>Donate Here</button></a>
   <div class="navbar">
       <div class="dropdown">
       <a href="programs-and-activities.html" target="_blank">
       <button class="dropbtn">Programs and Activities</a>
-          <i class="fa fa-caret-down"></i>
+        <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
         <a href="#">Kick It Cancer</a>
         <a href="#">Zoom Programming</a>
         <a href="#">On Demand Programming</a>
-        <a href="#">CSC 5 Point Model</a>
+      <li class="dropdown-submenu"></li>
+        <ul class="dropdown-menu">
+          <a class="test" tabindex="-1" href="#">CSC 5 Point Model<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a tabindex="-1" href="#">Education and Networking</a></li>
+              <li><a tabindex="-1" href="family-and-children.html" target="_blank">Family and Children</a></li>
+              <li><a tabindex="-1" href="fitness-physical-wellness.html" target="_blank">Fitness and Physical Wellness</a></li>
+              <li><a tabindex="-1" href="body-image.html" target="_blank">Body Images</a></li>
+          <li class="dropdown-submenu">
+              <a class="test" href="nutrition-and-diet.html" target="_blank">Nutrition and Diet<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="nutrition-popup-recipes.html" target="_blank">Nutrition Pop Up Recipes</a></li>
+              </ul>
+          </li>
+        </ul>
+        </ul>
+      </a>
         <a href="#">Calendar Grid and Zoom Registration</a>
-        <a href="#">Participant Forms</a>
-        <a href="#">Newsletters</a>
-      </div>
-      </div>
-
-      <div class="dropdown"> 
-      <a href="info-and-resources.html" target="_blank">  
-      <button class="dropbtn">Information and Resources</a>
-          <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-      <a href="hospitalPartnerships.html" target="_blank">Hospital Partnerships</a>
-      <a href="cancerSupportLinks.html" target="_blank">Cancer Support Links</a>
-      <a href="libraryResourceCenter.html" target="_blank">Library Resource Center</a>
-      <a href="financial.html" target="_blank">Financial</a>
-      <a href="transportation.html" target="_blank">Transportation Services</a>
+        <a href="participant-forms.html" target="_blank">Participant Forms</a>
+        <a href="newsletters.html" target="_blank">Newsletters</a>
       </div>
       </div>
 
       <div class="dropdown">
-      <a href="about-center.html" target="_blank"> 
+      <a href="info-and-resources.html">  
+      <button class="dropbtn">Information and Resources</a>
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+      <a href="hospitalPartnerships.html">Hospital Partnerships</a>
+      <a href="cancerSupportLinks.html">Cancer Support Links</a>
+      <a href="libraryResourceCenter.html">Library Resource Center</a>
+      <a href="financial.html">Financial</a>
+      <a href="transportation.html">Transportation Services</a>
+      </div>
+      </div>
+
+      <div class="dropdown">
+      <a href="about-center.html"> 
       <button class="dropbtn">About the Center</a>
           <i class="fa fa-caret-down"></i>
       </button>
@@ -53,7 +69,7 @@ class Header extends HTMLElement {
       </div>
 
       <div class="dropdown">
-      <a href="support-center.html" target="_blank"> 
+      <a href="support-center.html"> 
       <button class="dropbtn">Support the Center</a>
           <i class="fa fa-caret-down"></i>
       </button>
@@ -65,16 +81,16 @@ class Header extends HTMLElement {
       </div>
 
       <div class="dropdown">
-      <a href="special-events.html" target="_blank"> 
+      <a href="special-events.html"> 
       <button class="dropbtn">Special Events</a>
           <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-      <a href="annualGolfOuting.html" target="_blank">Annual Golf Outing</a>
-      <a href="2020VirtualFallWalkofHope.html" target="_blank">2020 Virtual FALL Walk of Hope</a>
-      <a href="2020FallUnGala.html" target="_blank">2020 Fall Un-Gala</a>
-      <a href="thirdPartyEvents.html" target="_blank">Third Party Community Events</a>
-      <a href="takeABiteOutOfCancer.html" target="_blank">Take a Bite Out of Cancer</a>
+      <a href="annualGolfOuting.html">Annual Golf Outing</a>
+      <a href="2020VirtualFallWalkofHope.html">2020 Virtual FALL Walk of Hope</a>
+      <a href="2020FallUnGala.html">2020 Fall Un-Gala</a>
+      <a href="thirdPartyEvents.html">Third Party Community Events</a>
+      <a href="takeABiteOutOfCancer.html">Take a Bite Out of Cancer</a>
       </div>
       </div>
   </div>         
