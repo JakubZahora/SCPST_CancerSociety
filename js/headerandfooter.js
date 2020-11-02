@@ -2,11 +2,7 @@ class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <nav>
-      <div class="header-logo">
-      <a href="index.html"><img src="css/Cancer_Support_Center.png" width="250" height="75" alt="Cancer Support Center"></a>
-    </div>
-  <a href="https://www.classy.org/give/123486/#!/donation/checkout" target="_blank"><button class = donate-button>Donate Here</button></a>
-  <div class="navbar">
+      <div class="navbar">
       <div class="dropdown">
       <a href="programs-and-activities.html" target="_blank">
       <button class="dropbtn">Programs and Activities</a>
@@ -16,23 +12,20 @@ class Header extends HTMLElement {
         <a href="#">Kick It Cancer</a>
         <a href="#">Zoom Programming</a>
         <a href="#">On Demand Programming</a>
-      <li class="dropdown-submenu"></li>
-        <ul class="dropdown-menu">
-          <a class="test" tabindex="-1" href="#">CSC 5 Point Model<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-              <li><a tabindex="-1" href="#">Education and Networking</a></li>
-              <li><a tabindex="-1" href="family-and-children.html" target="_blank">Family and Children</a></li>
-              <li><a tabindex="-1" href="fitness-physical-wellness.html" target="_blank">Fitness and Physical Wellness</a></li>
-              <li><a tabindex="-1" href="body-image.html" target="_blank">Body Images</a></li>
-          <li class="dropdown-submenu">
-              <a class="test" href="nutrition-and-diet.html" target="_blank">Nutrition and Diet<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="nutrition-popup-recipes.html" target="_blank">Nutrition Pop Up Recipes</a></li>
+        <ul class = "parent">
+          <li class="child"><a href="#" target="_blank">CSC 5 Point Model</a></li>
+              <ul class="parent">
+              <li class = "child"><a href="#" target="_blank">Education and Networking</a></li>
+              <li class = "child"><a href="family-and-children.html" target="_blank">Family and Children</a></li>
+              <li class = "child"><a href="fitness-physical-wellness.html" target="_blank">Fitness and Physical Wellness</a></li>
+              <li class = "child"><a href="body-image.html" target="_blank">Body Images</a></li>
+              <li class="child"><a href="nutrition-and-diet.html" target="_blank">Nutrition and Diet</a>
+                  <ul class ="parent">
+                      <li class = "child"><a href="nutrition-popup-recipes.html" target="_blank">Nutrition Pop Up Recipes</a>
+                      </li>
+                  </ul>
               </ul>
-          </li>
-        </ul>
-        </ul>
-      </a>
+        </ul>                  
         <a href="#">Calendar Grid and Zoom Registration</a>
         <a href="participant-forms.html" target="_blank">Participant Forms</a>
         <a href="newsletters.html" target="_blank">Newsletters</a>
@@ -93,7 +86,7 @@ class Header extends HTMLElement {
       <a href="takeABiteOutOfCancer.html">Take a Bite Out of Cancer</a>
       </div>
       </div>
-  </div>         
+  </div>       
       </nav>
       `;
     }
