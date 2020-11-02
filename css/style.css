@@ -1,9 +1,18 @@
 /** This is the CSS page for our website. */
 
-/* Positions the logo in the top left of the page*/
+/*CSS for logo at top left of page*/
+
 .header-logo {
-  position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 9%;
 }
+
+.header-logo img {
+	height: auto;
+	width: 100%;
+  }
+/*End of CSS for logo at top left of page*/
 
 /*CSS for top right donate button*/
 .donate-button {
@@ -49,6 +58,75 @@
   padding: 4px 1.5em 4px 2em;
 }
 /* End of CSS for top right donate button*/
+
+.navbar {
+	overflow: hidden;
+	/* background-color: #001A4B; */
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	width: 90%;
+	}
+	
+.navbar a {
+float: left;
+font-size: 16px;
+color:#001A4B;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+cursor: pointer;
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+/* padding: 10px 15px; Moves dropdown content over - so I can make it more centered*/
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn {
+background-color: #70B9E8;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* .show {
+display: block;
+} */
 
 /*CSS for second donate button on "Support the Center" page*/
 /* .donate-button-2 {
@@ -109,72 +187,6 @@
   margin: 10px;
 }
 
-.navbar {
-overflow: hidden;
-background-color: #001A4B;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar a {
-float: left;
-font-size: 16px;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-}
-
-.dropdown {
-float: left;
-overflow: hidden;
-}
-
-.dropdown .dropbtn {
-cursor: pointer;
-font-size: 16px;  
-border: none;
-outline: none;
-color: white;
-padding: 10px 15px; /* Moves dropdown content over - so I can make it more centered*/
-background-color: inherit;
-font-family: inherit;
-margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn {
-background-color: #70B9E8;
-}
-
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
-
-.dropdown-content a {
-float: none;
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-text-align: left;
-}
-
-.dropdown-content a:hover {
-background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-  }
-
-/* .show {
-display: block;
-} */
-
 /* Wraps location information in a box*/
 * {
 box-sizing: border-box;
@@ -201,9 +213,9 @@ vertical-align: middle;
 /* Fading animation */
 .fade {
 -webkit-animation-name: fade;
--webkit-animation-duration: 1.5s;
+-webkit-animation-duration: 5s;
 animation-name: fade;
-animation-duration: 1.5s;
+animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
